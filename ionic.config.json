@@ -1,3 +1,11 @@
 {
-  "projects": {}
+  "projects": {
+    "digicashier": {
+      "name": "digicashier",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/digicashier"
+    }
+  },
+  "defaultProject": "digicashier"
 }
