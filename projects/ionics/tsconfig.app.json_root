@@ -6,10 +6,10 @@
     "types": []
   },
   "files": [
-    "apps/digicashier/main.ts",
-    "apps/digicashier/polyfills.ts",
-    "apps/digistore/main.ts",
-    "apps/digistore/polyfills.ts"
+    "apps/firstApp/main.ts",
+    "apps/firstApp/polyfills.ts",
+    "apps/secondApp/main.ts",
+    "apps/secondApp/polyfills.ts"
   ],
   "include": [
     "apps/**/*.d.ts"

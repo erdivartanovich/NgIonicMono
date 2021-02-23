@@ -1,9 +1,9 @@
 {
   "appId": "dev.digipos.cashier",
-  "appName": "digicashier",
+  "appName": "firstApp",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "dist/digicashier",
+  "webDir": "dist/firstApp",
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0

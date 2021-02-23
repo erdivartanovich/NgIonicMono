@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">digicashier</string>
-    <string name="title_activity_main">digicashier</string>
+    <string name="app_name">firstApp</string>
+    <string name="title_activity_main">firstApp</string>
     <string name="package_name">dev.digipos.cashier</string>
     <string name="custom_url_scheme">dev.digipos.cashier</string>
 </resources>

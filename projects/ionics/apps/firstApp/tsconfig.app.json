@@ -2,7 +2,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc/digistore",
+    "outDir": "../../dist/out-tsc/firstApp",
     "types": []
   },
   "files": [

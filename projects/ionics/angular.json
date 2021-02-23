@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "defaultProject": "digicashier",
+  "defaultProject": "firstApp",
   "newProjectRoot": "apps",
   "projects": {
-    "digicashier": {
+    "firstApp": {
       "root": "",
-      "sourceRoot": "apps/digicashier",
+      "sourceRoot": "apps/firstApp",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
@@ -14,15 +14,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/digicashier",
-            "index": "apps/digicashier/index.html",
-            "main": "apps/digicashier/main.ts",
-            "polyfills": "apps/digicashier/polyfills.ts",
-            "tsConfig": "apps/digicashier/tsconfig.app.json",
+            "outputPath": "dist/firstApp",
+            "index": "apps/firstApp/index.html",
+            "main": "apps/firstApp/main.ts",
+            "polyfills": "apps/firstApp/polyfills.ts",
+            "tsConfig": "apps/firstApp/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "apps/digicashier/assets",
+                "input": "apps/firstApp/assets",
                 "output": "assets"
               },
               {
@@ -31,15 +31,15 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["apps/digicashier/theme/variables.scss", "apps/digicashier/global.scss"],
+            "styles": ["apps/firstApp/theme/variables.scss", "apps/firstApp/global.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/digicashier/environments/environment.ts",
-                  "with": "apps/digicashier/environments/environment.prod.ts"
+                  "replace": "apps/firstApp/environments/environment.ts",
+                  "with": "apps/firstApp/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -66,11 +66,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "digicashier:build"
+            "browserTarget": "firstApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "digicashier:build:production"
+              "browserTarget": "firstApp:build:production"
             },
             "ci": {
               "progress": false
@@ -80,27 +80,27 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "digicashier:build"
+            "browserTarget": "firstApp:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "apps/digicashier/test.ts",
-            "polyfills": "apps/digicashier/polyfills.ts",
-            "tsConfig": "apps/digicashier/tsconfig.spec.json",
+            "main": "apps/firstApp/test.ts",
+            "polyfills": "apps/firstApp/polyfills.ts",
+            "tsConfig": "apps/firstApp/tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "styles": [],
             "scripts": [],
             "assets": [
               {
                 "glob": "favicon.ico",
-                "input": "apps/digicashier/",
+                "input": "apps/firstApp/",
                 "output": "/"
               },
               {
                 "glob": "**/*",
-                "input": "apps/digicashier/assets",
+                "input": "apps/firstApp/assets",
                 "output": "/assets"
               }
             ]
@@ -116,8 +116,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "apps/digicashier/tsconfig.app.json",
-              "apps/digicashier/tsconfig.spec.json",
+              "apps/firstApp/tsconfig.app.json",
+              "apps/firstApp/tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
             "exclude": ["**/node_modules/**"]
@@ -127,46 +127,46 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "digicashier:serve"
+            "devServerTarget": "firstApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "digicashier:serve:production"
+              "devServerTarget": "firstApp:serve:production"
             },
             "ci": {
-              "devServerTarget": "digicashier:serve:ci"
+              "devServerTarget": "firstApp:serve:ci"
             }
           }
         },
         "ionic-cordova-build": {
           "builder": "@ionic/angular-toolkit:cordova-build",
           "options": {
-            "browserTarget": "digicashier:build"
+            "browserTarget": "firstApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "digicashier:build:production"
+              "browserTarget": "firstApp:build:production"
             }
           }
         },
         "ionic-cordova-serve": {
           "builder": "@ionic/angular-toolkit:cordova-serve",
           "options": {
-            "cordovaBuildTarget": "digicashier:ionic-cordova-build",
-            "devServerTarget": "digicashier:serve"
+            "cordovaBuildTarget": "firstApp:ionic-cordova-build",
+            "devServerTarget": "firstApp:serve"
           },
           "configurations": {
             "production": {
-              "cordovaBuildTarget": "digicashier:ionic-cordova-build:production",
-              "devServerTarget": "digicashier:serve:production"
+              "cordovaBuildTarget": "firstApp:ionic-cordova-build:production",
+              "devServerTarget": "firstApp:serve:production"
             }
           }
         }
       }
     },
-    "digistore": {
+    "secondApp": {
       "root": "",
-      "sourceRoot": "apps/digistore",
+      "sourceRoot": "apps/secondApp",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
@@ -174,15 +174,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/digistore",
-            "index": "apps/digistore/index.html",
-            "main": "apps/digistore/main.ts",
-            "polyfills": "apps/digistore/polyfills.ts",
-            "tsConfig": "apps/digistore/tsconfig.app.json",
+            "outputPath": "dist/secondApp",
+            "index": "apps/secondApp/index.html",
+            "main": "apps/secondApp/main.ts",
+            "polyfills": "apps/secondApp/polyfills.ts",
+            "tsConfig": "apps/secondApp/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "apps/digistore/assets",
+                "input": "apps/secondApp/assets",
                 "output": "assets"
               },
               {
@@ -191,15 +191,15 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["apps/digistore/theme/variables.scss", "apps/digistore/global.scss"],
+            "styles": ["apps/secondApp/theme/variables.scss", "apps/secondApp/global.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/digistore/environments/environment.ts",
-                  "with": "apps/digistore/environments/environment.prod.ts"
+                  "replace": "apps/secondApp/environments/environment.ts",
+                  "with": "apps/secondApp/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -226,11 +226,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "digistore:build"
+            "browserTarget": "secondApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "digistore:build:production"
+              "browserTarget": "secondApp:build:production"
             },
             "ci": {
               "progress": false
@@ -240,27 +240,27 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "digistore:build"
+            "browserTarget": "secondApp:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "apps/digistore/test.ts",
-            "polyfills": "apps/digistore/polyfills.ts",
-            "tsConfig": "apps/digistore/tsconfig.spec.json",
+            "main": "apps/secondApp/test.ts",
+            "polyfills": "apps/secondApp/polyfills.ts",
+            "tsConfig": "apps/secondApp/tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "styles": [],
             "scripts": [],
             "assets": [
               {
                 "glob": "favicon.ico",
-                "input": "apps/digistore/",
+                "input": "apps/secondApp/",
                 "output": "/"
               },
               {
                 "glob": "**/*",
-                "input": "apps/digistore/assets",
+                "input": "apps/secondApp/assets",
                 "output": "/assets"
               }
             ]
@@ -276,8 +276,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "apps/digistore/tsconfig.app.json",
-              "apps/digistore/tsconfig.spec.json",
+              "apps/secondApp/tsconfig.app.json",
+              "apps/secondApp/tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
             "exclude": ["**/node_modules/**"]
@@ -287,38 +287,38 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "digistore:serve"
+            "devServerTarget": "secondApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "digistore:serve:production"
+              "devServerTarget": "secondApp:serve:production"
             },
             "ci": {
-              "devServerTarget": "digistore:serve:ci"
+              "devServerTarget": "secondApp:serve:ci"
             }
           }
         },
         "ionic-cordova-build": {
           "builder": "@ionic/angular-toolkit:cordova-build",
           "options": {
-            "browserTarget": "digistore:build"
+            "browserTarget": "secondApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "digistore:build:production"
+              "browserTarget": "secondApp:build:production"
             }
           }
         },
         "ionic-cordova-serve": {
           "builder": "@ionic/angular-toolkit:cordova-serve",
           "options": {
-            "cordovaBuildTarget": "digistore:ionic-cordova-build",
-            "devServerTarget": "digistore:serve"
+            "cordovaBuildTarget": "secondApp:ionic-cordova-build",
+            "devServerTarget": "secondApp:serve"
           },
           "configurations": {
             "production": {
-              "cordovaBuildTarget": "digistore:ionic-cordova-build:production",
-              "devServerTarget": "digistore:serve:production"
+              "cordovaBuildTarget": "secondApp:ionic-cordova-build:production",
+              "devServerTarget": "secondApp:serve:production"
             }
           }
         }

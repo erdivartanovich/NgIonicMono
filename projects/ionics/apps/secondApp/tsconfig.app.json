@@ -2,7 +2,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc/digicashier",
+    "outDir": "../../dist/out-tsc/secondApp",
     "types": []
   },
   "files": [

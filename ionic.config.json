@@ -1,19 +1,19 @@
 {
   "projects": {
-    "digicashier": {
-      "name": "digicashier",
+    "firstApp": {
+      "name": "firstApp",
       "integrations": {
         "capacitor": {}
       },
       "type": "angular",
       "root": "projects/ionics"
     },
-    "digistore": {
-      "name": "digistore",
+    "secondApp": {
+      "name": "secondApp",
       "integrations": {},
       "type": "angular",
       "root": "projects/ionics"
     }
   },
-  "defaultProject": "digicashier"
+  "defaultProject": "firstApp"
 }
