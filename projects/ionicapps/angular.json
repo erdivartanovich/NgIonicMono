@@ -14,7 +14,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "www",
+            "outputPath": "dist/digicashier",
             "index": "apps/digicashier/index.html",
             "main": "apps/digicashier/main.ts",
             "polyfills": "apps/digicashier/polyfills.ts",
@@ -174,7 +174,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "www",
+            "outputPath": "dist/digistore",
             "index": "apps/digistore/index.html",
             "main": "apps/digistore/main.ts",
             "polyfills": "apps/digistore/polyfills.ts",

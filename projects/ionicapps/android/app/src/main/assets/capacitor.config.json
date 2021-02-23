@@ -1,0 +1,13 @@
+{
+  "appId": "dev.digipos.cashier",
+  "appName": "digicashier",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/digicashier",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
