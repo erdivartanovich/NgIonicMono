@@ -1,27 +1,34 @@
 # NgDigipos
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
-
+Custom Monorepo Boiler project consist of: 
+- Angular boilerplate (web, and library),
+- Two Ionic Applications with Capacitor android for Building Multiple Platfowm Apps (Electron, Android, Ios, Windows)
+With this setup we can achieve sharing core library across all the projects.
 ## Development server
 
+#### Running Angular App (Web)
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+#### Running Ionic App (Web)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+  ionic serve --project={projectName}
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Auto Generate Multiplatform Resources For Ionic App
+Will auto generate splashscreen & icon inside resources folder of ionicapps for windows, android, and ios
+```sh
+  cd ionicapps
+  npx cordova-res --skip-config --copy
+```
+For electron you should replace all images in electron/assets folder
 
-## Running unit tests
+### Build Multiplatform ionic App
+```
+  cd root
+  ionic capacitor build {platform}  # platform=android,ios,electron
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
