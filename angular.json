@@ -3,5 +3,86 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "libcore": {
+      "projectType": "library",
+      "root": "projects/libcore",
+      "sourceRoot": "projects/libcore/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/libcore/tsconfig.lib.json",
+            "project": "projects/libcore/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/libcore/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/libcore/src/test.ts",
+            "tsConfig": "projects/libcore/tsconfig.spec.json",
+            "karmaConfig": "projects/libcore/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/libcore/tsconfig.lib.json",
+              "projects/libcore/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "uikitweb": {
+      "projectType": "library",
+      "root": "projects/uikitweb",
+      "sourceRoot": "projects/uikitweb/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/uikitweb/tsconfig.lib.json",
+            "project": "projects/uikitweb/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/uikitweb/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/uikitweb/src/test.ts",
+            "tsConfig": "projects/uikitweb/tsconfig.spec.json",
+            "karmaConfig": "projects/uikitweb/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/uikitweb/tsconfig.lib.json",
+              "projects/uikitweb/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "libcore"
 }

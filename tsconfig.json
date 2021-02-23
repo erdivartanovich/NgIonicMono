@@ -9,6 +9,16 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "libcore": [
+        "dist/libcore/libcore",
+        "dist/libcore"
+      ],
+      "uikitweb": [
+        "dist/uikitweb/uikitweb",
+        "dist/uikitweb"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
