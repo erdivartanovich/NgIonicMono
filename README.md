@@ -5,17 +5,23 @@ Custom Monorepo Boiler project consist of:
 With this setup we can achieve sharing core library across all the projects.
 ## Development server
 
-#### Running Angular App (Web)
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Running Angular App (Web & Library) Dev Server
+```sh
+  ng serve --project={projectName}
+```
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-#### Running Ionic App (Web)
-
+#### Running Ionic App Dev Server
 ```sh
   ionic serve --project={projectName}
 ```
 
 ## Build
 
+### Build Angular App (Web & Library)
+```sh
+  ng build --project={projectName}
+```
 ### Auto Generate Multiplatform Resources For Ionic App
 Will auto generate splashscreen & icon inside resources folder of ionics for windows, android, and ios
 ```sh
