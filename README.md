@@ -17,9 +17,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Build
 
 ### Auto Generate Multiplatform Resources For Ionic App
-Will auto generate splashscreen & icon inside resources folder of ionicapps for windows, android, and ios
+Will auto generate splashscreen & icon inside resources folder of ionics for windows, android, and ios
 ```sh
-  cd ionicapps
+  cd ionics
   npx cordova-res --skip-config --copy
 ```
 For electron you should replace all images in electron/assets folder

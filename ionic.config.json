@@ -6,13 +6,13 @@
         "capacitor": {}
       },
       "type": "angular",
-      "root": "projects/ionicapps"
+      "root": "projects/ionics"
     },
     "digistore": {
       "name": "digistore",
       "integrations": {},
       "type": "angular",
-      "root": "projects/ionicapps"
+      "root": "projects/ionics"
     }
   },
   "defaultProject": "digicashier"
